@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container{margin: auto;
+                    }
+        .box{width: 250px;
+            border:1px solid #999;
+            box-sizing: border-box;
+            padding: 15px;
+            margin: 5px;
+        
+        }
+        .img{width: 100%;
+            vertical-align: top;
+            }
+        .box img{width: 100%;
+                 vertical-align: top;
+                }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".container").imagesLoaded(function(){
+            $(".container").masonry({
+                isFitWidth:true
+            });
+        });
+        
+    });
+    </script>
+    
+
+</head>
+   <body>
+    <div class="container">
+       <div class="box">
+        <img src="https://images.unsplash.com/photo-1460917975071-bcf44881c99e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=4988c1efebae6d056e7b2116bba12475" alt="">
+        </div>
+       
+        <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quae iste eum harum laboriosam minima, quos quibusdam quasi suscipit, voluptates fuga perspiciatis cum, ea expedita mollitia provident earum debitis! Tempora!    
+        </div>
+        
+        <div class="box">
+        <img src="https://images.unsplash.com/photo-1418874478290-e7bc1086d373?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=9dcbb60b78e1e62e640ede1c1a1b4ba2" alt="">
+        </div>
+        
+        <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quae iste eum harum laboriosam minima, quos quibusdam quasi suscipit, voluptates fuga perspiciatis cum, ea expedita mollitia provident earum debitis! Tempora! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quae iste eum harum laboriosam minima, quos quibusdam quasi suscipit, voluptates fuga perspiciatis cum, ea expedita mollitia provident earum debitis! Tempora! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quae iste eum harum laboriosam minima, quos quibusdam quasi suscipit, voluptates fuga perspiciatis cum, ea expedita mollitia provident earum debitis! Tempora! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quae iste eum harum laboriosam minima, quos quibusdam quasi suscipit, voluptates fuga perspiciatis cum, ea expedita mollitia provident earum debitis! Tempora!    
+        </div>
+        
+        <div class="box">
+        <img src="https://images.unsplash.com/photo-1464898644169-85eb09c329aa?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=455c8be8c62ca7c80ad2d68c98a3906d" alt="">
+        </div>
+        
+        <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quae iste eum harum \   
+        </div>
+        
+        <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quae iste eum harum laboriosam minima, quos quibusdam quasi suscipit, voluptates fuga perspiciatis cum, ea expedita mollitia provident earum debitis! Tempora!    
+        </div>
+      </div>
+    
+</body>
+</html>
