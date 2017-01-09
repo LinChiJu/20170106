@@ -6,10 +6,29 @@
     <script src="jquery.bxslider.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="jquery.bxslider.css"></script>
-    <script>
-    $(function(
-     ".slider").bxslider();{});
-     </script>
+   <script>
+        //這邊可以縮寫成這樣所以前面的$(document).ready可以直接省略不寫//
+        //可以選擇播放模式有三種'horizontal'(水平)'vertical'(垂直)'fade'(淡入淡出)//
+        //'auto'自動播放是以布林值'true'或'false'顯示//
+        //'pause'是照片停留速度通常是毫秒計算//
+        //'speed'是照片跳到下一張照片的速度也是毫秒計算//
+        //'captions'可顯示照片的title但IMG裡面要設定title名字//
+        //'pager'這是下面點點那個頁碼//
+        //' controls'這是指瀏覽者按上下張//
+        $(function(){
+            $(".slider").bxSlider({
+                mode:"fade",
+                auto:true,
+                pause:6000,
+                speed:300,
+                captions:true,
+                pager:false,
+                controls:false,
+                
+            });
+        })
+    
+    </script>
 </head>
 <body>
   <header>
